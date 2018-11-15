@@ -1,0 +1,66 @@
+body {
+    background-color: #ffffcc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.elem_init {
+    background-color: #66ccff;
+    border-top-style: solid;
+    border-top-width: 2px;
+    padding: 3px;
+}
+
+div.elem0 {
+    background-color: #ff9966;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 3px;
+}
+
+div.elem1 {
+    background-color: #99ff99;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 3px;
+}
+
+div.elem2 {
+    background-color: #ff99ff;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 3px;
+}
+
+
+#recipe_separator {
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 1%;
+}
+
+#menu {
+    border-width: 5px;
+    border-style: double;
+    margin-right: 23cm;
+    float: left;
+    position:absolute;
+}
+
+#recipes {
+    border-radius: 15px;
+    border: 2px solid #000000;
+    float: left;
+    position: relative;
+    margin-left: 20%;
+    padding-right: 4%;
+}
+
+#menu_pres {
+    padding: 1px 3px 1px 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
