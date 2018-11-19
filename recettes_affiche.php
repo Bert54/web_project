@@ -11,10 +11,10 @@
             else {
                 echo "<ul id='recipe_separator'>";
             }
-            echo "<li>" . $recipe['titre'] . "</li>";
-            echo "<li>" . $recipe['ingredients'] . "</li>";
-            echo "<li>" . $recipe['preparation'] . "</li>";
-            echo "<li><ol>";
+            echo "<li><span style='font-size: 25px; color:blue;'>Recette : </span><br /><br /><span style ='padding-left:2%;'>" . $recipe['titre'] . "</span></li><br />";
+            echo "<li><span style='font-size: 25px; color:blue;'>Quantités : </span><br /><br /><span style ='padding-left:2%;'>" . $recipe['ingredients'] . "</span></li><br />";
+            echo "<li><span style='font-size: 25px; color:blue;'>Préparation : </span><br /><br /><span style ='padding-left:2%;'>" . $recipe['preparation'] . "</span></li><br />";
+            echo "<li><span style='font-size: 25px; color:blue;'>Ingrédients : </span><br /><br /><ol><br />";
             foreach ($recipe['index'] as $ind) {
                 echo "<li>" . $ind . "</li>";
             }
