@@ -53,13 +53,21 @@ div.elem2 {
 #recipes {
     background-color: #333333;
     border-radius: 15px;
+<<<<<<< HEAD
     border: 2px solid #FFFFFF;
+=======
+    border: 2px solid #000000;
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
     position: relative;
     left: 0px;
     top: 0px;
     z-index: 10;
     margin-top: 15px;
+<<<<<<< HEAD
     margin-left: 27%;
+=======
+    margin-left: 22%;
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
     margin-right: 4%;
     padding-right: 4%;
 }
@@ -69,26 +77,45 @@ div.elem2 {
 }
 
 #research_bar {
+<<<<<<< HEAD
     background-color: #404040;
+=======
+    background-color: #ffccaa;
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
     display: inline-block;
     width: 40%;
     padding : 1%;
     box-shadow: 4px 5px black;
+<<<<<<< HEAD
     border-radius: 8px;
     border: 2px solid #FFFFFF;
 }
 
 #session_bar {
     background-color: #404040;
+=======
+    border-radius: 4px;
+}
+
+#session_bar {
+    background-color: #aaccff;
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
     display: inline-block;
     position: relative;
     float: right;
     z-index: 10000;
+<<<<<<< HEAD
     width: 40%;
     padding: 0.8% 1% 1% 1%;
     box-shadow: 4px 5px black;
     border-radius: 8px;
     border: 2px solid #FFFFFF;
+=======
+    width: 25%;
+    padding: 0.8% 1% 1% 1%;
+    box-shadow: 4px 5px black;
+    border-radius: 4px;
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
     text-align: right;
 }
 
@@ -96,6 +123,7 @@ div.elem2 {
     position: relative;
 }
 
+<<<<<<< HEAD
 #user_recipe_single {
     border-style: solid;
     border-width: 1px;
@@ -120,6 +148,8 @@ div.elem2 {
     cursor: pointer;
 }
 
+=======
+>>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
 a {
     text-decoration: none;
     color: black;
