@@ -75,6 +75,7 @@ function showUserRecipes() {
     }
 }
 
+
 function displayRecipeFromUserList(elem) {
     var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function (elem) {
@@ -83,6 +84,17 @@ function displayRecipeFromUserList(elem) {
             }
         };
     xhttp.open("GET", "recette_affiche_nomrecette.php?elem=" + elem, true);
+    xhttp.send();
+}
+
+function displayAllRecipeFromUserList() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            document.getElementById("recipes").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "recette_affiche_multiplerecette.php", true);
     xhttp.send();
 }
 

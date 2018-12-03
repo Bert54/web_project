@@ -11,95 +11,11 @@
             else {
                 $user_recipes = json_decode($_COOKIE['user_recipes'], true);
             }
-<<<<<<< HEAD
-=======
-            //$user_recipes = array("aaa", "bbb");
-            //setcookie('user_recipes', json_encode($user_recipes), time()+36000);
-
->>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
 		?>
         <title>Projet Boissons</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="page_principale.css">
-<<<<<<< HEAD
         <script type="text/javascript" src="projet_boissons_scripts.js" ></script>
-=======
-	
-        <script language="JavaScript">
-
-            function addRecipeToFavourites(elem) {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function (elem) {
-                    if (this.readyState === 4 && this.status === 200) {
-                        document.getElementById("recipes").innerHTML = this.responseText;
-                    }
-                };
-                xhttp.open("GET", "ajoute_recette_fav.php?elem=" + elem, true);
-                xhttp.send();
-            }
-
-            function hideMenuInit(str) {
-                document.getElementById(str).style.display='none';
-            }
-
-            function showMenuItem(str) {
-                var doc = document.getElementById(str);
-                if ($(doc).is(':visible')) {
-                    doc.style.display = 'none';
-                }
-                else {
-                    doc.style.display = 'block';
-                }
-            }
-
-            function showRecipesMultiple(elem) {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function (elem) {
-                    if (this.readyState === 4 && this.status === 200) {
-                        document.getElementById("recipes").innerHTML = this.responseText;
-                    }
-                };
-                xhttp.open("GET", "recettes_affiche_multiple.php?elem=" + elem, true);
-                xhttp.send();
-            }
-
-            function showRecipes(elem) {
-                if (elem.length === 0) {
-                    document.getElementById("recipes").innerHTML = "";
-                }
-                else {
-                    var xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function (elem) {
-                        if (this.readyState === 4 && this.status === 200) {
-                            document.getElementById("recipes").innerHTML = this.responseText;
-                        }
-                    };
-                }
-                xhttp.open("GET", "recettes_affiche.php?elem=" + elem, true);
-                xhttp.send();
-            }
-
-            function showUserRecipes() {
-                var doc = document.getElementById('user_recipes');
-                if ($(doc).is(':visible')) {
-                    doc.style.display = 'none';
-                }
-                else {
-                    doc.style.display = 'block';
-                }
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function (elem) {
-                    if (this.readyState === 4 && this.status === 200) {
-                        document.getElementById('user_recipes').innerHTML = this.responseText;
-                    }
-                };
-                xhttp.open("GET", "user_recipes.php", true);
-                xhttp.send();
-            }
-
-	    </script>
-
->>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
 	</head>
         
 	<body>
@@ -124,11 +40,7 @@
                 onclick="showRecipesMultiple(search.value)"/></p>
             </span>
             <span id="session_bar">
-<<<<<<< HEAD
                 <p><a href="#" onclick="showUserRecipes()" style="text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;">Mes Recettes Favorites</a></p>
-=======
-                <p><a href="#" onclick="showUserRecipes()" >Mes Recettes</a></p>
->>>>>>> 6525fe2dc8b2cd4c379f00bf138642483fd85556
                 <span id="user_recipes">
 
                 </span>
